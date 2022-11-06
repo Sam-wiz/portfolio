@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="resources/favicon.ico">
+  <link rel="stylesheet" href="styleindex.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e4ed2c37c1.js" crossorigin="anonymous"></script>
+  <title>Samrudh(aka sam-wiz)</title>
+</head>
+
+<body>
+  <div class="loader">
+           <div class="ring"></div>
+           <span class="txt">loading...</span>
+        </div>
+  <!-- ---------header --------- -->
+  <div id="top">
+    <div class="container">
+      <div class="row-1">
+        <img src="resources/logo.png" alt="logo" class="logo">
+        <h1> I'm <span> Samrudh</span> Vandakudari</h1>
+        <p id="text"> <button class="btn1" onclick="typeWriter()">😀</button> </p>
+        <p class="msg">(Yo, hit above to smile with me and don't forget to move over right side of your window, hehe)</p>
+      </div>
+      <div class="row-2">
+        <nav>
+        <ul id="sidemenu">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+        <img class="mp" src="resources/mp2.png" alt="My pic">
+        <!--<img class="alt" src="resources/hello.png" alt="Hello">-->
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ---------about --------- -->
+  <div id="about">
+  <h2 class="sub-title">Insight of my works</h2>
+    <div class="container1">
+
+        <div class="work-list">
+          <div class="work">
+            <img src="resources/wk2.png">
+            <div class="layer">
+              <h3 class="wok">Works and achievements</h3>
+              <p class="det" >You can check my works and achievements in this section. You can also download the certificates.<br> Get Inspired!!</p>
+              <a href="work.html" class="det" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="resources/res1.png">
+            <div class="layer">
+              <h3 class="wok">Resume</h3>
+              <p class="det" >Please do view my resume by hitting below icon. <br> Thank You</p>
+              <a href="resume.html" class="det" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+<!---------Contact ----->
+<div id="contact">
+  <h2 class="sub-title">Contact Me</h2>
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <p class="det" ><i  class="fa-solid fa-envelope"></i>   samrdhvvandakudri2005@gmail.com</p>
+        <p class="det" ><i class="fa-solid fa-phone"></i>+91 8618217545</p>
+        <p class="det"  ><i class="fa-brands fa-discord"></i>Samrudh#4186</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/samrudh2024k/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/Sam-wiz" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/samrudh-vandakudri-17029b234/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="foo" action="mailto:samrudhvvandakudri2005@gmail.com" method="post" enctype="text/plain">
+          <input type="text" name="Name:" placeholder="Name" value="" required>
+          <input type="email" name="Email Id:" value="" placeholder="Your email-id" required><br>
+          <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+          <input type="submit" value="Submit" class="bttn" >
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="Copyright">
+    <p>Copyright <i class="fa-regular fa-copyright"></i> Samrudh </p>
+  </div>
+</div>
+
+
+  <p id="demo"></p>
+<script>
+var i = 0;
+var txt = 'Hey nice to see you. I am currently a XII grader. I am a damn freek of Computer technology and Astrophysics. Scroll through website to know more about me. Happy to connect with you😀😀 ';
+var speed = 30;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("text").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  setTimeout(function(){$('.loader').fadeToggle();}, 1500);
+</script>
+<script>
+  var sidemeu = document.getElementById("sidemenu");
+
+  function openmenu() {
+    sidemeu.style.right = "0" ;
+  }
+  function closemenu() {
+    sidemeu.style.right = " -250px" ;
+  }
+</script>
+</body>
+
+</html>
