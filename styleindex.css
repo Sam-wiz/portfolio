@@ -394,6 +394,7 @@ nav .fa-solid
   {
     font-size: 14px;
     width: 100%;
+    align : auto;
   }
   .mp
   {
@@ -424,5 +425,9 @@ nav .fa-solid
   .icon-wk
   {
     font-size: 20px;
+  }
+  .mat
+  {
+    font-size : 15px;
   }
 }
