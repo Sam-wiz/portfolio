@@ -415,9 +415,13 @@ nav .fa-solid
   }
   .det
   {
-    font-size: 15px;
+    display : none;
   }
   .wok
+  {
+    display : none;
+  }
+  .icon-wk
   {
     font-size: 20px;
   }
